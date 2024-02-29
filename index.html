@@ -7,26 +7,28 @@
     <style>
         body {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 20px; /* Espaço entre as imagens */
-            padding: 20px; /* Espaçamento em torno da área de conteúdo */
+            flex-direction: column; /* Organiza os itens em uma coluna */
+            align-items: center; /* Centraliza os itens na direção transversal */
+            gap: 0px; /* Espaço entre as imagens */
+            padding: 0px; /* Espaçamento em torno da área de conteúdo */
+            margin: 0; /* Remove margens padrão */
             background-color: #f0f0f0; /* Cor de fundo */
         }
         img {
-            width: 150px; /* Largura das imagens */
+            width: 100%; /* Faz com que cada imagem ocupe a largura total */
+            max-width: 960px; /* Opcional: Limita a largura máxima das imagens */
             height: auto; /* Altura automática para manter a proporção */
-            border: 1px solid #ccc; /* Borda para destacar as imagens */
-            padding: 10px; /* Espaçamento interno */
+            border: 0px; /* Borda para destacar as imagens */
+            padding: 0px; /* Espaçamento interno */
             background-color: #fff; /* Cor de fundo das imagens */
+            box-sizing: border-box; /* Inclui padding e border no cálculo da largura/altura */
         }
     </style>
 </head>
 <body>
-    <img src="Home.svg" alt="Descrição da imagem 1">
-    <img src="Portifólio.svg" alt="Descrição da imagem 2">
-    <img src="Quem somos.svg" alt="Descrição da imagem 3">
-    <img src="Serviços.svg" alt="Descrição da imagem 4">
+    <img src="Home.svg" alt="Página inicial">
+    <img src="Portifólio.svg" alt="Portfólio">
+    <img src="Quem somos.svg" alt="Quem somos">
+    <img src="Serviços.svg" alt="Serviços">
 </body>
 </html>
